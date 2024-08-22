@@ -1,0 +1,20 @@
+{
+    "version": "1.0.0.0",
+    "components": [
+      {
+        "id": "frontend",
+        "friendlyName": "Shop at Home Frontend",
+        "type": "static",
+        "appLocation": "./vue-app",
+        "linkedTo": ["backend"],
+        "outputLocation": "dist"
+      },
+      {
+        "id": "backend",
+        "friendlyName": "Shop at Home Backend",
+        "type": "api",
+        "appLocation": "./fastify-api-server",
+        "ingressPort": "3000"
+      }
+    ]
+  }
